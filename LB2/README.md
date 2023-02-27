@@ -18,8 +18,6 @@
 ![image](https://user-images.githubusercontent.com/125886136/221588927-e48ec643-ca30-4781-95fa-c1e819dd9c35.png)
 ### Git-Client wurde verwendet
 ![image](https://user-images.githubusercontent.com/125886136/221588992-729d10e0-b178-4b7e-a928-a2be927322ea.png)
-
-
 ### Vagrant
 
 ### Sicherheitsaspekte sind implementiert
@@ -36,6 +34,7 @@
 
 ### Wichtige Lernschritte sind dokumentiert
 
+
 ## Vagrant
 
 ### Bestehende vm aus Vagrant-Cloud einrichten
@@ -50,6 +49,7 @@
 
 ### Projekt mit Git und Mark Down dokumentiert
 
+
 ## Sicherheitsaspekte sind implementiert
 
 ### Firewall eingerichtet inkl. Rules
@@ -63,6 +63,7 @@
 ### Sicherheitsmassnahmen sind dokumentiert
 
 ### Projekt mit Git und Mark Down dokumentiert
+
 
 ## Zusätzliche Bewertungspunkte
 
