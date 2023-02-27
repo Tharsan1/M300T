@@ -3,6 +3,7 @@
 ## LB2
 
 ### Umgebung auf eigenem Notebook eingerichtet und funktionsfähig
+#### VirtualBox
 ![image](https://user-images.githubusercontent.com/125886136/221586873-69d2dcf5-e1c1-47c1-ac1b-5f71bebd8b6b.png)
 ![image](https://user-images.githubusercontent.com/125886136/221587053-63c267aa-be05-4716-a107-02648a029add.png)
 ![image](https://user-images.githubusercontent.com/125886136/221587138-2c3fcb92-6e7d-4804-bd68-b0e10cffaf40.png)
