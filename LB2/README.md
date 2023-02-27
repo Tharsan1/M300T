@@ -48,6 +48,11 @@ Siehe bei den jeweiligen Abschnitten.
 
 ### Bestehende VM aus Vagrant-Cloud einrichten
 
+```Shell
+      $ vagrant init ubuntu/xenial64        #Vagrantfile erzeugen
+      $ vagrant up --provider virtualbox    #Virtuelle Maschine erstellen & starten
+    ``` 
+
 
 ### Kennt die Vagrant-Befehle
 Die wichtigsten Befehle sind:
