@@ -50,7 +50,7 @@
 
 ### Projekt mit Git und Mark Down dokumentiert
 
-## ZSicherheitsaspekte sind implementiert
+## Sicherheitsaspekte sind implementiert
 
 ### Firewall eingerichtet inkl. Rules
 
