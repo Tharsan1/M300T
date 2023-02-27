@@ -1,24 +1,22 @@
 # M300T
 
-## LB2
-
-### Umgebung auf eigenem Notebook eingerichtet und funktionsfähig
-#### VirtualBox
+## Umgebung auf eigenem Notebook eingerichtet und funktionsfähig
+### VirtualBox
 ![image](https://user-images.githubusercontent.com/125886136/221586873-69d2dcf5-e1c1-47c1-ac1b-5f71bebd8b6b.png)
-#### Vagrant
+### Vagrant
 ![image](https://user-images.githubusercontent.com/125886136/221587053-63c267aa-be05-4716-a107-02648a029add.png)
-#### Visualstudio-Code
+### Visualstudio-Code
 ![image](https://user-images.githubusercontent.com/125886136/221587138-2c3fcb92-6e7d-4804-bd68-b0e10cffaf40.png)
-#### Git-Client
+### Git-Client
 ![image](https://user-images.githubusercontent.com/125886136/221587230-4be1faa4-1b76-44b0-8d56-470aada72441.png)
-#### SSH-Key für Client erstellt
+### SSH-Key für Client erstellt
 ![image](https://user-images.githubusercontent.com/125886136/221587370-1de9481e-30bd-454f-9f0b-0c43d2a16db1.png)
 
 
-### Eigene Lernumgebung (PLE) ist eingerichtet
-#### GitHUB oder Gitlab-Account ist erstellt
+## Eigene Lernumgebung (PLE) ist eingerichtet
+### GitHUB oder Gitlab-Account ist erstellt
 ![image](https://user-images.githubusercontent.com/125886136/221588927-e48ec643-ca30-4781-95fa-c1e819dd9c35.png)
-#### Git-Client wurde verwendet
+### Git-Client wurde verwendet
 ![image](https://user-images.githubusercontent.com/125886136/221588992-729d10e0-b178-4b7e-a928-a2be927322ea.png)
 
 
@@ -27,4 +25,61 @@
 ### Sicherheitsaspekte sind implementiert
 
 ### Zusätzliche Bewertungspunkte
+
+### Dokumentation ist als Mark Down vorhanden
+
+### Mark down-Editor ausgewählt und eingerichtet
+
+### Mark down ist strukturiert
+
+### Persönlicher Wissenstand im Bezug auf die wichtigsten Themen sind dokumentiert
+
+### Wichtige Lernschritte sind dokumentiert
+
+## Vagrant
+
+### Bestehende vm aus Vagrant-Cloud einrichten
+
+### Kennt die Vagrant-Befehle
+
+### Eingerichtete Umgebung ist dokumentiert
+
+### Funktionsweise getestet inkl. Dokumentation der Testfälle
+
+### andere, vorgefertige vm auf eigenem Notebook aufgesetzt
+
+### Projekt mit Git und Mark Down dokumentiert
+
+## ZSicherheitsaspekte sind implementiert
+
+### Firewall eingerichtet inkl. Rules
+
+### Reverse-Proxy eingerichtet
+
+### Benutzer- und Rechtevergabe ist eingerichtet
+
+### Zugang mit SSH-Tunnel abgesichert
+
+### Sicherheitsmassnahmen sind dokumentiert
+
+### Projekt mit Git und Mark Down dokumentiert
+
+## Zusätzliche Bewertungspunkte
+
+### Kreativität
+
+### Komplexität
+
+### Umfang
+
+### Cloud-Integration
+
+### Authentifizierung und Autorisierung via LDAP
+
+### Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt
+
+### Vergleich Vorwissen - Wissenszuwachs
+
+###Reflexion
+
 
