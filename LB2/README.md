@@ -1,5 +1,6 @@
 # Nachweis der Leistungsbeurteilungskriterien
-
+<br>
+<br>
 ## Umgebung auf eigenem Notebook eingerichtet und funktionsfähig
 ### VirtualBox
 ![image](https://user-images.githubusercontent.com/125886136/221586873-69d2dcf5-e1c1-47c1-ac1b-5f71bebd8b6b.png)
@@ -12,6 +13,8 @@
 ### SSH-Key für Client erstellt
 ![image](https://user-images.githubusercontent.com/125886136/221587370-1de9481e-30bd-454f-9f0b-0c43d2a16db1.png)
 
+<br>
+<br>
 
 ## Eigene Lernumgebung (PLE) ist eingerichtet
 ### GitHUB oder Gitlab-Account ist erstellt
@@ -34,6 +37,8 @@
 
 ### Wichtige Lernschritte sind dokumentiert
 
+<br>
+<br>
 
 ## Vagrant
 
@@ -49,7 +54,8 @@
 
 ### Projekt mit Git und Mark Down dokumentiert
 
-
+<br>
+<br>
 ## Sicherheitsaspekte sind implementiert
 
 ### Firewall eingerichtet inkl. Rules
@@ -64,7 +70,8 @@
 
 ### Projekt mit Git und Mark Down dokumentiert
 
-
+<br>
+<br>
 ## Zusätzliche Bewertungspunkte
 
 ### Kreativität
