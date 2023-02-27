@@ -55,6 +55,7 @@
 
 <br>
 <br>
+
 ## Sicherheitsaspekte sind implementiert
 
 ### Firewall eingerichtet inkl. Rules
@@ -71,6 +72,7 @@
 
 <br>
 <br>
+
 ## Zusätzliche Bewertungspunkte
 
 ### Kreativität
