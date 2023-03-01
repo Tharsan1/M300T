@@ -46,7 +46,7 @@ Tharsan Pethurupillai
 <br>
 \Alternatively, for H1 and H2, an underline-ish style: <br>
 
-<p> \Alt-H1 <br\
+<p> \Alt-H1 <br>
 \====== </p>
 <br>
 <p> \Alt-H2 <br>
