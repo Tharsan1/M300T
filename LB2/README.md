@@ -7,16 +7,16 @@ Tharsan Pethurupillai
 ## Inhaltsverzeichnis
 
 - [Einführung](#einfuehrung)
-      - [Git einrichten](#giteinrichten)
+  - [Git einrichten](#giteinrichten)
 - [Markdown](#markdown)
 - [Software einrichten](#softwareeinrichten)
-      - [VirtualBox einrichten](#virtualboxeinrichten)
-      - [Vagrant einrichten](#vagranteinrichten)
-      - [Visualstudio-Code einrichten](#visualstudiocodeeinrichten)
-      - [Git-Client einrichten](#gitclienteinrichten)
-      - [SSH-Key für Client erstellt](#sshkeyerstellen)
+  - [VirtualBox einrichten](#virtualboxeinrichten)
+  - [Vagrant einrichten](#vagranteinrichten)
+  - [Visualstudio-Code einrichten](#visualstudiocodeeinrichten)
+  - [Git-Client einrichten](#gitclienteinrichten)
+  - [SSH-Key für Client erstellt](#sshkeyerstellen)
 - [Vagrant](#vagrant)
-      - [Befehle](#Befehle)
+  - [Befehle](#Befehle)
 
  <a bane="einfuehrung"></a>
  ##Einführung
