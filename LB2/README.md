@@ -46,6 +46,9 @@ Tharsan Pethurupillai
     - [Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt](#übungsdokumentation-als-vorlage-für-modul-unterlagen-erstellt)
     - [Vergleich Vorwissen - Wissenszuwachs](#vergleich-vorwissen---wissenszuwachs)
     - [Reflexion](#reflexion)
+      - [Tag 1](#tag-1)
+      - [Tag 2](#tag-2)
+      - [Tag 3](#tag-3)
 
  <a name="einführung"></a>
  ## Einführung
@@ -303,4 +306,20 @@ Hier wird ein vorgefertiger VM auf den Virtualbox aufgesetzt und wird wie im Vag
 
 ### Reflexion
 
+#### Tag 1
+Heute war eher ein theorätischer Tag. Wir haben viel Informationen erhalten unter anderen, was das Modul beinhaltet und wie es mit der Leistungsbeurteilung aussieht.
+Danach konnten wir schon die ersten Erfolgsereignisse erleben. Doch zuvor mussten wir die verschiedenen Applikationen und Clients installieren.
+Da ich heute relativ schnell unterwegs war, habe ich mit vagrant angefangen. Ich konnte anhand Vagrant nicht ein Client aufsetzen aber ich konnte manuell aufsetzen.
+
+Ich bin heute ziemlich zufrieden mit meiner Leistung heute.
+
+#### Tag 2
+An diesem Tag habe ich mein Problem mit Vagrant analysiert und behoben. Das Problem lag bei der SSH-Privat und Public Key. Ich musste die Schlüsseln nochmals erstellen und in Github & Lab hinterlegen.
+Danach habe ich mir den Globalen Vagrant file von Ubuntu gezogen und ausgerollt. Das hat mich sehr gefreut. Dadurch wurde die Motivation noch höher und ich stürzte mich an die nächste Aufgabe. Dort mussten wir viele verschiedene Aufgaben auf Vagrant einrichten. Doch als ich synchronisieren wollte, beschwerte sich Github. Das Problem lag daran, dass der maximaler Filesize überschritten wurde und ich konnte auch nicht die Commits entfernen. Also musste ich mein ganzes Repo löschen und neu aufsetzen.
+
+#### Tag 3
+Da ich zu Hause Zeit hatte, habe ich mich an der LB2 gestürzt. Hierbei habe ich zuerst informationen zur Vagrantfile gesammelt um dies zu erstellen. Heute habe ich dann dieses File feingeschliffen und ausgeführt. Jedoch handelte es sich um ein vorgefertigtes File also habe ich für LB2 ein neues erstellt. Dabei verwendete ich Docker Image um nginx zu beziehen. Um den Gastport handelte es sich um Port 80 und der Hostport 100. Damit konnte ich mit Port 100 auf den Server zugreifen von meinem Client aus.
+
+Um das zu bewätigen mussten verschiedene Firewallports freigeschalten werden und auch eingerichtet sein.
+Das konnte ich mit dem heutigen Input gut gewältigen.
 
