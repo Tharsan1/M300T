@@ -245,11 +245,6 @@ Tipp: Wurde schon mal über den Browser die Adresse aufgerufen, sollten Sie um f
 Hier wird ein vorgefertiger VM auf den Virtualbox aufgesetzt und wird wie im Vagrantfile definiert, werden die Webfiles lokal auch abgespeichert. -> 
 * [Vagrantfile von vorgefertiger VM](nginx/Vagrantfile)
 
-### Projekt mit Git und Mark Down dokumentiert
-
-<br>
-<br>
-
 ## Sicherheitsaspekte sind implementiert
 
 ### Firewall eingerichtet inkl. Rules
