@@ -108,7 +108,7 @@ Vagrant konfiguration einleiten
 
 Welche Ubuntu Version verwendet wird
     
-    `config.vm.box = "ubuntu/bionic64"`
+    `config.vm.box = "ubuntu/xenial64"`
 
 
 Port forwarding von 80 auf 100.
@@ -220,13 +220,11 @@ Siehe bei den jeweiligen Abschnitten.
 ![image](https://user-images.githubusercontent.com/125886136/223112761-024a1e4f-ba74-472b-be7e-e79650de2b7d.png)
 
 
-
-
 ### Eingerichtete Umgebung ist dokumentiert
 
 ### Funktionsweise getestet inkl. Dokumentation der Testfälle
 
-### andere, vorgefertige vm auf eigenem Notebook aufgesetzt
+### andere, vorgefertige VM auf eigenem Notebook aufgesetzt
 
 ### Projekt mit Git und Mark Down dokumentiert
 
