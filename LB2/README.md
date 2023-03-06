@@ -225,7 +225,8 @@ Hier wurde der Vagrantfile von nginx_docker verwendet, weil dadurch die lokale V
 
 #### Testfall für die Funktionalität:
 Um die Funktion zu testen sollte man über den Client mit localhost:100 auf den Linux Server zugreifen können.
-![image](https://user-images.githubusercontent.com/125886136/223132136-4676b8a4-916c-47a1-b5c1-878924114cd6.png)
+![image](https://user-images.githubusercontent.com/125886136/223134818-3ba1275e-32a0-4f19-a286-c398f3fece2e.png)
+
 
 Damit wir auch sicher sein können, dass der Port über 100 verlauft, wird in dem Beispiel Port 101 verwendet, erwartetes Ergebnis: Keine Verbindung
 ![image](https://user-images.githubusercontent.com/125886136/223134640-c04ce83c-581b-4b9c-8a54-1c33c82d9759.png)
