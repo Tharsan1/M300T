@@ -223,18 +223,25 @@ Siehe bei den jeweiligen Abschnitten.
 ### Eingerichtete Umgebung ist dokumentiert
 
 ### Funktionsweise getestet inkl. Dokumentation der Testfälle
-![image](https://user-images.githubusercontent.com/125886136/223118272-71096d8f-a36c-4f81-ab70-b8687d94b7b7.png)
-![image](https://user-images.githubusercontent.com/125886136/223118359-b0a3de43-6c6e-4115-9568-f5faa5fbd582.png)
 
 
-![image](https://user-images.githubusercontent.com/125886136/223118488-5d1ab1a3-5168-4647-9cc8-d4863d7aaeec.png)
+
+
+
+
 
 
 
 
 
 ### andere, vorgefertige VM auf eigenem Notebook aufgesetzt
-
+![image](https://user-images.githubusercontent.com/125886136/223118272-71096d8f-a36c-4f81-ab70-b8687d94b7b7.png)
+![image](https://user-images.githubusercontent.com/125886136/223118359-b0a3de43-6c6e-4115-9568-f5faa5fbd582.png)
+![image](https://user-images.githubusercontent.com/125886136/223118488-5d1ab1a3-5168-4647-9cc8-d4863d7aaeec.png)
+![image](https://user-images.githubusercontent.com/125886136/223127351-3b766e6f-3f51-465f-a575-891cce4ee58d.png)
+<br>
+Hier wird ein vorgefertiger VM auf den Virtualbox aufgesetzt und wird wie im Vagrantfile definiert, werden die Webfiles lokal auch abgespeichert. -> 
+* [Vagrantfile von vorgefertiger VM](nginx/Vagrantfile)
 ### Projekt mit Git und Mark Down dokumentiert
 
 <br>
