@@ -227,7 +227,7 @@ Um die Funktion zu testen muss man über den Client mit localhost:100 auf den Li
 ![image](https://user-images.githubusercontent.com/125886136/223132136-4676b8a4-916c-47a1-b5c1-878924114cd6.png)
 
 <br>
-Tipp: Sollte schon mal über den Browser die IP-Adresse aufgerufen sein, sollten Sie Inkognito-Modus verwenden, damit die Cookies nicht verwendet werden.
+Tipp: Wurde schon mal über den Browser die Adresse aufgerufen, sollten Sie um fehler zu vermeiden Inkognito Modus verwenden, damit werden die abgespeicherten Cookies nicht verwendet.
 
 ### andere, vorgefertige VM auf eigenem Notebook aufgesetzt
 ![image](https://user-images.githubusercontent.com/125886136/223118272-71096d8f-a36c-4f81-ab70-b8687d94b7b7.png)
