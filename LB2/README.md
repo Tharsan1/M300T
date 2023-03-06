@@ -50,19 +50,25 @@ Tharsan Pethurupillai
       - [Tag 2](#tag-2)
       - [Tag 3](#tag-3)
 
- <a name="einführung"></a>
+ 
  ## Einführung
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
  Als erstens wird eine kleine Einführung über alle wichtigen Services stehen.
  
- <a name="git-einrichten"></a>
+
  ### Git einrichten
+  > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
  ```
  git config --global user.name "username"
  git config --global user.email "E-Mail"
  ```
  
- <a name="markdown"></a>
+ 
  ## Markdown
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
  Markdown bearbeiten in Code:
  https://code.visualstudio.com/docs/languages/markdown
  
@@ -85,33 +91,38 @@ Tharsan Pethurupillai
 \------ </p>
 <br>
 
-<a name="umgebung-auf-eigenem-notebook-eingerichtet-und-funktionsfähig"></a>
 ## Umgebung auf eigenem Notebook eingerichtet und funktionsfähig
 
-<a name="virtualbox"></a>
 ### VirtualBox
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 ![image](https://user-images.githubusercontent.com/125886136/221586873-69d2dcf5-e1c1-47c1-ac1b-5f71bebd8b6b.png)
 
-<a name="visualstudio-code"></a>
 ### Visualstudio-Code
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 ![image](https://user-images.githubusercontent.com/125886136/221587138-2c3fcb92-6e7d-4804-bd68-b0e10cffaf40.png)
 
-<a name="git-client"></a>
 ### Git-Client
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 ![image](https://user-images.githubusercontent.com/125886136/221587230-4be1faa4-1b76-44b0-8d56-470aada72441.png)
 
-<a name="ssh-key-für-client-erstellt"></a>
 ### SSH-Key für Client erstellt
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 ![image](https://user-images.githubusercontent.com/125886136/221587370-1de9481e-30bd-454f-9f0b-0c43d2a16db1.png)
 
-<a name="vagrant"></a>
 ## Vagrant
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 Vagrant ist eine freie Ruby-Anwendung zum Erstellen und Verwalten virtueller Maschinen.[2] Vagrant ermöglicht einfache Softwareverteilung (englisch Deployment) insbesondere in der Software- und Webentwicklung und dient als Wrapper zwischen Virtualisierungssoftware wie VirtualBox, KVM/QEMU, VMware und Hyper-V und Software-Configuration-Management-Anwendungen beziehungsweise Systemkonfigurationswerkzeugen wie Chef, Saltstack und Puppet.
 
 ![image](https://user-images.githubusercontent.com/125886136/221587053-63c267aa-be05-4716-a107-02648a029add.png)
 
-<a name="befehle"></a>
 ### Befehle
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 | Befehl                    | Beschreibung                                                      |
 | ------------------------- | ----------------------------------------------------------------- | 
 | `vagrant init`            | Initialisiert im aktuellen Verzeichnis eine Vagrant-Umgebung und erstellt, falls nicht vorhanden, ein Vagrantfile |
@@ -126,9 +137,10 @@ Weitere Befehle unter: https://www.vagrantup.com/docs/cli/
 
 <br>
 
-<a name="eingerichtete-umgebung---dokumentierung-code"></a>
 
 ### Eingerichtete Umgebung - Dokumentierung Code
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 Hier sieht man den verwendeten Code und die Erklärung zu den jeweiligen Commands.
 
 Vagrant konfiguration einleiten
@@ -212,25 +224,25 @@ Vagrant Config Ende
     `SHELL`
     `end`
 
-<a name="eigene-lernumgebung-ple-ist-eingerichtet"></a>
-
 ## Eigene Lernumgebung (PLE) ist eingerichtet
 
-<a name="github-oder-gitlab-account-ist-erstellt"></a>
-
 ### GitHUB oder Gitlab-Account ist erstellt
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 ![image](https://user-images.githubusercontent.com/125886136/221588927-e48ec643-ca30-4781-95fa-c1e819dd9c35.png)
 
-<a name="git-client-wurde-verwendet"></a>
 
 ### Git-Client wurde verwendet
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 ![image](https://user-images.githubusercontent.com/125886136/221588992-729d10e0-b178-4b7e-a928-a2be927322ea.png)
 
 <br>
 
-<a name="bestehende-vm-aus-vagrant-cloud-einrichten"></a>
 
 ### Bestehende VM aus Vagrant-Cloud einrichten
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 
 ```Shell
       $ vagrant init ubuntu/xenial64        #Vagrantfile erzeugen
@@ -240,14 +252,15 @@ Vagrant Config Ende
 
 ![image](https://user-images.githubusercontent.com/125886136/223112761-024a1e4f-ba74-472b-be7e-e79650de2b7d.png)
 
-<a name="funktionsweise-getestet-inkl-dokumentation-der-testfälle"></a>
 
 ### Funktionsweise getestet inkl. Dokumentation der Testfälle
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 Hier wurde der Vagrantfile von nginx_docker verwendet, weil dadurch die lokale Verbindung über den Docker funktioniert.
 
-<a name="testfall-für-die-funktionalität"></a>
-
 #### Testfall für die Funktionalität
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 Um die Funktion zu testen sollte man über den Client mit localhost:100 auf den Linux Server zugreifen können.
 ![image](https://user-images.githubusercontent.com/125886136/223134818-3ba1275e-32a0-4f19-a286-c398f3fece2e.png)
 
@@ -260,9 +273,10 @@ Damit wir auch sicher sein können, dass der Port über 100 verlauft, wird in de
 <br>
 Tipp: Wurde schon mal über den Browser die Adresse aufgerufen, sollten Sie um fehler zu vermeiden Inkognito Modus verwenden, damit werden die abgespeicherten Cookies nicht verwendet.
 
-<a name="andere-vorgefertige-vm-auf-eigenem-notebook-aufgesetzt"></a>
 
 ### andere, vorgefertige VM auf eigenem Notebook aufgesetzt
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+ 
 ![image](https://user-images.githubusercontent.com/125886136/223118272-71096d8f-a36c-4f81-ab70-b8687d94b7b7.png)
 ![image](https://user-images.githubusercontent.com/125886136/223118359-b0a3de43-6c6e-4115-9568-f5faa5fbd582.png)
 ![image](https://user-images.githubusercontent.com/125886136/223118488-5d1ab1a3-5168-4647-9cc8-d4863d7aaeec.png)
