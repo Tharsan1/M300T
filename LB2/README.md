@@ -60,7 +60,6 @@ Tharsan Pethurupillai
 <a name="virtualboxeinrichten"></a>
 ### VirtualBox
 ![image](https://user-images.githubusercontent.com/125886136/221586873-69d2dcf5-e1c1-47c1-ac1b-5f71bebd8b6b.png)
-< name="virtualboxeinrichten"></a>
 
 <a name="vagranteinrichten"></a>
 ### Vagrant
@@ -218,8 +217,6 @@ Siehe bei den jeweiligen Abschnitten.
 ``` 
 
 
-### Kennt die Vagrant-Befehle
-Die wichtigsten Befehle sind:
 
 
 ### Eingerichtete Umgebung ist dokumentiert
