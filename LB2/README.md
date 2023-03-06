@@ -193,7 +193,7 @@ Vagrant Config Ende
 Dieses Dokumentation wurde mit Mark Down erstellt.
 
 ### Mark down-Editor ausgewählt und eingerichtet
-Fpr Mark down-Editor wurde Visual Studio Code verwendet.
+Für Mark down-Editor wurde Visual Studio Code verwendet.
 
 ### Mark down ist strukturiert
 Es ist strukturiert.
