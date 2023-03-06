@@ -215,6 +215,8 @@ Siehe bei den jeweiligen Abschnitten.
       $ vagrant init ubuntu/xenial64        #Vagrantfile erzeugen
       $ vagrant up --provider virtualbox    #Virtuelle Maschine erstellen & starten
 ``` 
+![image](https://user-images.githubusercontent.com/125886136/223113049-a307eba2-46e6-47f5-9c9d-cca056545c13.png)
+
 ![image](https://user-images.githubusercontent.com/125886136/223112761-024a1e4f-ba74-472b-be7e-e79650de2b7d.png)
 
 
