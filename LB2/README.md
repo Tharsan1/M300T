@@ -50,18 +50,18 @@ Tharsan Pethurupillai
       - [Tag 2](#tag-2)
       - [Tag 3](#tag-3)
 
- <a name="einführung"></a>
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
  ## Einführung
  Als erstens wird eine kleine Einführung über alle wichtigen Services stehen.
  
- <a name="git-einrichten"></a>
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
  ### Git einrichten
  ```
  git config --global user.name "username"
  git config --global user.email "E-Mail"
  ```
  
- <a name="markdown"></a>
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
  ## Markdown
  Markdown bearbeiten in Code:
  https://code.visualstudio.com/docs/languages/markdown
@@ -85,7 +85,7 @@ Tharsan Pethurupillai
 \------ </p>
 <br>
 
-<a name="umgebung-auf-eigenem-notebook-eingerichtet-und-funktionsfähig"></a>
+> [⇧ **Nach oben**](#inhaltsverzeichnis)
 ## Umgebung auf eigenem Notebook eingerichtet und funktionsfähig
 
 <a name="virtualbox"></a>
