@@ -17,7 +17,7 @@ Tharsan Pethurupillai
   - [SSH-Key für Client erstellt](#sshkeyerstellen)
 - [Vagrant](#vagrant)
   - [Befehle](#Befehle)
-  - [Code](#code)
+  - [Eingerichtete Umgebung - Dokumentierung Code](#code)
 
  <a bane="einfuehrung"></a>
  ##Einführung
@@ -98,7 +98,7 @@ Weitere Befehle unter: https://www.vagrantup.com/docs/cli/
 <br>
 
 <a name="code"></a>
-### Code
+### Eingerichtete Umgebung - Dokumentierung Code
 Hier sieht man den verwendeten Code und die Erklärung zu den jeweiligen Commands.
 
 Vagrant konfiguration einleiten
