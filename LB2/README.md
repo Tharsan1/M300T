@@ -220,14 +220,16 @@ Siehe bei den jeweiligen Abschnitten.
 ![image](https://user-images.githubusercontent.com/125886136/223112761-024a1e4f-ba74-472b-be7e-e79650de2b7d.png)
 
 
-### Eingerichtete Umgebung ist dokumentiert
-
 ### Funktionsweise getestet inkl. Dokumentation der Testfälle
 Hier wurde der Vagrantfile von nginx_docker verwendet, weil dadurch die lokale Verbindung über den Docker funktioniert.
 
 #### Testfall für die Funktionalität:
 Um die Funktion zu testen sollte man über den Client mit localhost:100 auf den Linux Server zugreifen können.
 ![image](https://user-images.githubusercontent.com/125886136/223132136-4676b8a4-916c-47a1-b5c1-878924114cd6.png)
+
+Damit wir auch sicher sein können, dass der Port über 100 verlauft, wird in dem Beispiel Port 101 verwendet, erwartetes Ergebnis: Keine Verbindung
+![image](https://user-images.githubusercontent.com/125886136/223134640-c04ce83c-581b-4b9c-8a54-1c33c82d9759.png)
+
 
 <br>
 Tipp: Wurde schon mal über den Browser die Adresse aufgerufen, sollten Sie um fehler zu vermeiden Inkognito Modus verwenden, damit werden die abgespeicherten Cookies nicht verwendet.
