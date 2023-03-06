@@ -157,7 +157,7 @@ Ende der Vagrant Config
     `end`
 
 
-VM Config einleiten. Festlegen das folgende zeilen in der Shell geschrieben werden.
+VM Config einleiten. Festlegen das folgende Zeilen in der Shell geschrieben werden.
 
     `config.vm.provision "shell", inline: <<-SHELL`
 
@@ -185,7 +185,7 @@ Verifikation des Dockerimages
     `$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > ``/dev/null`
 
 
-Firewall Rules setzten
+Firewall Rules setzen
     
     `sudo ufw --force enable`
     `sudo ufw allow 80/tcp`
