@@ -226,7 +226,7 @@ Siehe bei den jeweiligen Abschnitten.
 Hier wurde der Vagrantfile von nginx_docker verwendet, weil dadurch die lokale Verbindung über den Docker funktioniert.
 
 #### Testfall für die Funktionalität:
-Um die Funktion zu testen muss man über den Client mit localhost:100 auf den Linux Server zugreifen sollen.
+Um die Funktion zu testen sollte man über den Client mit localhost:100 auf den Linux Server zugreifen können.
 ![image](https://user-images.githubusercontent.com/125886136/223132136-4676b8a4-916c-47a1-b5c1-878924114cd6.png)
 
 <br>
