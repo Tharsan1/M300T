@@ -226,14 +226,11 @@ Siehe bei den jeweiligen Abschnitten.
 ![image](https://user-images.githubusercontent.com/125886136/223118272-71096d8f-a36c-4f81-ab70-b8687d94b7b7.png)
 ![image](https://user-images.githubusercontent.com/125886136/223118359-b0a3de43-6c6e-4115-9568-f5faa5fbd582.png)
 
-Hier ist zu sehen, dass der Server automatisch aufgesetzt wurde.
 
 ![image](https://user-images.githubusercontent.com/125886136/223118488-5d1ab1a3-5168-4647-9cc8-d4863d7aaeec.png)
-Hiermit habe ich die IP-Addresse herausgefunden, damit ich die Funktionalität auf den lokalen Client testen kann.
 
-![image](https://user-images.githubusercontent.com/125886136/223119370-f55fee0c-676e-4bf3-be20-accdd16187ab.png)
-Zu sehen ist, dass ngnix lauft, er hört auf den Port 80 jedoch lässt die Firewall die Verbindung auf Port 2222 nicht zu.
-Dieses Problem muss genauer analysiert werden.
+
+
 
 
 ### andere, vorgefertige VM auf eigenem Notebook aufgesetzt
