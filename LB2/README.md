@@ -223,16 +223,11 @@ Siehe bei den jeweiligen Abschnitten.
 ### Eingerichtete Umgebung ist dokumentiert
 
 ### Funktionsweise getestet inkl. Dokumentation der Testfälle
+Um die Funktion zu testen muss man über den Client mit localhost:100 auf den Linux Server zugreifen sollen.
+![image](https://user-images.githubusercontent.com/125886136/223132136-4676b8a4-916c-47a1-b5c1-878924114cd6.png)
 
-
-
-
-
-
-
-
-
-
+<br>
+Tipp: Sollte schon mal über den Browser die IP-Adresse aufgerufen sein, sollten Sie Inkognito-Modus verwenden, damit die Cookies nicht verwendet werden.
 
 ### andere, vorgefertige VM auf eigenem Notebook aufgesetzt
 ![image](https://user-images.githubusercontent.com/125886136/223118272-71096d8f-a36c-4f81-ab70-b8687d94b7b7.png)
@@ -242,6 +237,7 @@ Siehe bei den jeweiligen Abschnitten.
 <br>
 Hier wird ein vorgefertiger VM auf den Virtualbox aufgesetzt und wird wie im Vagrantfile definiert, werden die Webfiles lokal auch abgespeichert. -> 
 * [Vagrantfile von vorgefertiger VM](nginx/Vagrantfile)
+
 ### Projekt mit Git und Mark Down dokumentiert
 
 <br>
