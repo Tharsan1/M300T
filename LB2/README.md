@@ -143,6 +143,7 @@ Zu sehen ist mein Netzwerkplan.
 Die Server- und Userspezifische Einstellungen werden im Vagrantfile getätigt. Darunter fallen z.B. Firewallrules.
 Danach wird im Vagrantfile noch die Befehle eingetragen, welches der VM dann benötigt, um sich mit den Docker-Repository zu verbinden.
 <br>
+
 ![image](https://user-images.githubusercontent.com/125886136/224710421-5e93c5f5-c108-4dc1-a145-d723d1370756.png)
 
 
