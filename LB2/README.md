@@ -263,6 +263,11 @@ Hier wurde der Vagrantfile von nginx_docker verwendet, weil dadurch die lokale V
 
 Um die Funktion zu testen sollte man über den Client mit localhost:100 auf den Linux Server zugreifen können.
 ![image](https://user-images.githubusercontent.com/125886136/223134818-3ba1275e-32a0-4f19-a286-c398f3fece2e.png)
+<br>
+Hier ist ein Curl auf die Webseite.
+<br>
+![image](https://user-images.githubusercontent.com/125886136/224703243-e7cf1e4b-d97b-47a6-aa86-5955c9156f6e.png)
+
 
 
 Damit wir auch sicher sein können, dass der Port über 100 verlauft, wird in dem Beispiel Port 101 verwendet, erwartetes Ergebnis: Keine Verbindung 
@@ -299,6 +304,8 @@ Hier wird mit PuTTY getestet, ob eine Verbindung über den Port 2222 forwardet w
 <br>Erhaltenes Ergebnis: Verbindung möglich.
 <br>
 ![image](https://user-images.githubusercontent.com/125886136/224702186-5e695f05-0f89-4373-b361-ea42ba9635ce.png)
+
+
 
 
 ### Sicherheitsmassnahmen sind dokumentiert
