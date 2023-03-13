@@ -294,6 +294,12 @@ Hier wird ein vorgefertiger VM auf den Virtualbox aufgesetzt und wird wie im Vag
 ### Benutzer- und Rechtevergabe ist eingerichtet
 
 ### Zugang mit SSH-Tunnel abgesichert
+Hier wird mit PuTTY getestet, ob eine Verbindung über den Port 2222 forwardet wird auf Port 22 / SSH.
+<br>Erwartetes Ergebnis: Verbindung über PuTTY möglich.
+<br>Erhaltenes Ergebnis: Verbindung möglich.
+<br>
+![image](https://user-images.githubusercontent.com/125886136/224702186-5e695f05-0f89-4373-b361-ea42ba9635ce.png)
+
 
 ### Sicherheitsmassnahmen sind dokumentiert
 
