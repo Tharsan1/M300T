@@ -290,12 +290,6 @@ Tipp: Wurde schon mal über den Browser die Adresse aufgerufen, sollten Sie um f
 Hier wird ein vorgefertiger VM auf den Virtualbox aufgesetzt und wird wie im Vagrantfile definiert, werden die Webfiles lokal auch abgespeichert. -> 
 * [Vagrantfile von vorgefertiger VM](nginx/Vagrantfile)
 
-## Sicherheitsaspekte sind implementiert
-
-### Firewall eingerichtet inkl. Rules
-
-### Reverse-Proxy eingerichtet
-
 ### Benutzer- und Rechtevergabe ist eingerichtet
 
 ### Zugang mit SSH-Tunnel abgesichert
@@ -304,30 +298,6 @@ Hier wird mit PuTTY getestet, ob eine Verbindung über den Port 2222 forwardet w
 <br>Erhaltenes Ergebnis: Verbindung möglich.
 <br>
 ![image](https://user-images.githubusercontent.com/125886136/224702186-5e695f05-0f89-4373-b361-ea42ba9635ce.png)
-
-
-
-
-### Sicherheitsmassnahmen sind dokumentiert
-
-### Projekt mit Git und Mark Down dokumentiert
-
-<br>
-<br>
-
-## Zusätzliche Bewertungspunkte
-
-### Kreativität
-
-### Komplexität
-
-### Umfang
-
-### Cloud-Integration
-
-### Authentifizierung und Autorisierung via LDAP
-
-### Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt
 
 ### Vergleich Vorwissen - Wissenszuwachs
 
