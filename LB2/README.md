@@ -262,6 +262,7 @@ Hier wurde der Vagrantfile von nginx_docker verwendet, weil dadurch die lokale V
  > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
 Um die Funktion zu testen sollte man über den Client mit localhost:100 auf den Linux Server zugreifen können.
+Sollte es funktionieren, ist der Reverse-Proxy richtig konfiguriert. <br>
 ![image](https://user-images.githubusercontent.com/125886136/223134818-3ba1275e-32a0-4f19-a286-c398f3fece2e.png)
 <br>
 Hier ist ein Curl auf die Webseite.
@@ -298,6 +299,7 @@ Hier wird mit PuTTY getestet, ob eine Verbindung über den Port 2222 forwardet w
 <br>Erhaltenes Ergebnis: Verbindung möglich.
 <br>
 ![image](https://user-images.githubusercontent.com/125886136/224702186-5e695f05-0f89-4373-b361-ea42ba9635ce.png)
+
 
 ### Vergleich Vorwissen - Wissenszuwachs
 
