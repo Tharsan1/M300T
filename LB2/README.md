@@ -311,6 +311,18 @@ Um Zugriff auf den Webseite zu erhalten ist der Port auf 100 weitergeleitet word
 
 ### Vergleich Vorwissen - Wissenszuwachs
 
++ Verschiedene Arten eine Umgebung zu automatisieren.
++ Vorteil von Automatisierten Skript.
++ Einrichtung über Vagrant.
++ Bedienung von Github.
++ SSH Key vereinfacht erstellen.
++ Verschiedene Sicherheitsaspekte beim Betriebnahme eines Services / Server.
++ Firewallrules erstellen und löschen.
++ Reverse-Proxy einrichten.
++ Docker in Umgebung einbinden und aktivieren.
+
+
+
 ### Reflexion
 
 #### Tag 1
