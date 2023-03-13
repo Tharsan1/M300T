@@ -292,6 +292,11 @@ Hier wird ein vorgefertiger VM auf den Virtualbox aufgesetzt und wird wie im Vag
 * [Vagrantfile von vorgefertiger VM](nginx/Vagrantfile)
 
 ### Benutzer- und Rechtevergabe ist eingerichtet
+Die Benutzerrechte sind korrekt konfiguriert, unter anderem kann man das durch den Zugriff auf den Ngnix bemerken.
+In /etc/passwd wären die Berechtigungen auch ersichtlich.
+<br>
+![image](https://user-images.githubusercontent.com/125886136/224705203-319e6089-5c20-45a6-956c-abf0198812d5.png)
+
 
 ### Zugang mit SSH-Tunnel abgesichert
 Hier wird mit PuTTY getestet, ob eine Verbindung über den Port 2222 forwardet wird auf Port 22 / SSH.
@@ -300,6 +305,9 @@ Hier wird mit PuTTY getestet, ob eine Verbindung über den Port 2222 forwardet w
 <br>
 ![image](https://user-images.githubusercontent.com/125886136/224702186-5e695f05-0f89-4373-b361-ea42ba9635ce.png)
 
+### Sicherheitsmassnahmen
+Um die Sicherheitsaspekt zu garantieren, ist der Root Benutzer deaktiviert und die verschiedenen Berechtigungen für die diversen Benutzern gesetzt.
+Um Zugriff auf den Webseite zu erhalten ist der Port auf 100 weitergeleitet worden und die SSH-Verbindung über den Port 2222.
 
 ### Vergleich Vorwissen - Wissenszuwachs
 
