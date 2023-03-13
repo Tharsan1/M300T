@@ -333,5 +333,5 @@ Das konnte ich mit dem heutigen Input gut gewältigen.
 #### Tag 4
 Heute habe ich weiter an meinem Projekt gearbeitet. Zuerst musste ich die Maschine wieder auf die Beine kriegen. Doch das hat nicht wie gewollte funktioniert. Zuerst konnte ich nicht auf die Webseite zugreifen. Mein erster Verdacht lag bei der Servereinstellung. Also habe ich den ganzen Server gelöscht und anhand Vagrant neu aufgesetzt. Doch das Problem war immernoch present.
 Dann bemerkte ich, dass die Internetverbindung über WLAN und LAN bestand. Deshalb konnte mein Host den Server nicht sehen. Nachdem ich WLAN entbunden habe, funktionierte es wie gewünscht.
-Anschliessend habe ich meine Dokumentation weitergeführt und die verschiedenen Aspekte vom Bewertungsraster anhand eines Testfalls abgedeckt. Unteranderen die Funktionalität von SSH über den Port 2222. Meine vermutung war, dass es nicht Funktioniert. Aber erstaunlicherweise hat es doch funktioniert. 
+Anschliessend habe ich meine Dokumentation weitergeführt und die verschiedenen Aspekte vom Bewertungsraster anhand eines Testfalls abgedeckt. Unteranderen die Funktionalität von SSH über den Port 2222. Meine Vermutung war, dass es nicht Funktioniert. Aber erstaunlicherweise hat es doch funktioniert. 
 
