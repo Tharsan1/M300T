@@ -22,6 +22,7 @@ Tharsan Pethurupillai
     - [SSH-Key für Client erstellt](#ssh-key-für-client-erstellt)
   - [Vagrant](#vagrant)
     - [Befehle](#befehle)
+    - [Netzwerkplan](#netzwerkplan)
     - [Eingerichtete Umgebung - Dokumentierung Code](#eingerichtete-umgebung---dokumentierung-code)
   - [Eigene Lernumgebung (PLE) ist eingerichtet](#eigene-lernumgebung-ple-ist-eingerichtet)
     - [GitHUB oder Gitlab-Account ist erstellt](#github-oder-gitlab-account-ist-erstellt)
@@ -30,25 +31,15 @@ Tharsan Pethurupillai
     - [Funktionsweise getestet inkl. Dokumentation der Testfälle](#funktionsweise-getestet-inkl-dokumentation-der-testfälle)
       - [Testfall für die Funktionalität](#testfall-für-die-funktionalität)
     - [andere, vorgefertige VM auf eigenem Notebook aufgesetzt](#andere-vorgefertige-vm-auf-eigenem-notebook-aufgesetzt)
-  - [Sicherheitsaspekte sind implementiert](#sicherheitsaspekte-sind-implementiert)
-    - [Firewall eingerichtet inkl. Rules](#firewall-eingerichtet-inkl-rules)
-    - [Reverse-Proxy eingerichtet](#reverse-proxy-eingerichtet)
     - [Benutzer- und Rechtevergabe ist eingerichtet](#benutzer--und-rechtevergabe-ist-eingerichtet)
     - [Zugang mit SSH-Tunnel abgesichert](#zugang-mit-ssh-tunnel-abgesichert)
-    - [Sicherheitsmassnahmen sind dokumentiert](#sicherheitsmassnahmen-sind-dokumentiert)
-    - [Projekt mit Git und Mark Down dokumentiert](#projekt-mit-git-und-mark-down-dokumentiert)
-  - [Zusätzliche Bewertungspunkte](#zusätzliche-bewertungspunkte)
-    - [Kreativität](#kreativität)
-    - [Komplexität](#komplexität)
-    - [Umfang](#umfang)
-    - [Cloud-Integration](#cloud-integration)
-    - [Authentifizierung und Autorisierung via LDAP](#authentifizierung-und-autorisierung-via-ldap)
-    - [Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt](#übungsdokumentation-als-vorlage-für-modul-unterlagen-erstellt)
+    - [Sicherheitsmassnahmen](#sicherheitsmassnahmen)
     - [Vergleich Vorwissen - Wissenszuwachs](#vergleich-vorwissen---wissenszuwachs)
     - [Reflexion](#reflexion)
       - [Tag 1](#tag-1)
       - [Tag 2](#tag-2)
       - [Tag 3](#tag-3)
+      - [Tag 4](#tag-4)
 
  
  ## Einführung
@@ -338,4 +329,9 @@ Da ich zu Hause Zeit hatte, habe ich mich an der LB2 gestürzt. Hierbei habe ich
 
 Um das zu bewätigen mussten verschiedene Firewallports freigeschalten werden und auch eingerichtet sein.
 Das konnte ich mit dem heutigen Input gut gewältigen.
+
+#### Tag 4
+Heute habe ich weiter an meinem Projekt gearbeitet. Zuerst musste ich die Maschine wieder auf die Beine kriegen. Doch das hat nicht wie gewollte funktioniert. Zuerst konnte ich nicht auf die Webseite zugreifen. Mein erster Verdacht lag bei der Servereinstellung. Also habe ich den ganzen Server gelöscht und anhand Vagrant neu aufgesetzt. Doch das Problem war immernoch present.
+Dann bemerkte ich, dass die Internetverbindung über WLAN und LAN bestand. Deshalb konnte mein Host den Server nicht sehen. Nachdem ich WLAN entbunden habe, funktionierte es wie gewünscht.
+Anschliessend habe ich meine Dokumentation weitergeführt und die verschiedenen Aspekte vom Bewertungsraster anhand eines Testfalls abgedeckt. Unteranderen die Funktionalität von SSH über den Port 2222. Meine vermutung war, dass es nicht Funktioniert. Aber erstaunlicherweise hat es doch funktioniert. 
 
