@@ -20,6 +20,7 @@ Tharsan Pethurupillai
     - [Visualstudio-Code](#visualstudio-code)
     - [Git-Client](#git-client)
     - [SSH-Key für Client erstellt](#ssh-key-für-client-erstellt)
+- [Leistungsbeurteilung 2](/LB2/README.md)
  
  ## Einführung
  > [⇧ **Nach oben**](#inhaltsverzeichnis)
