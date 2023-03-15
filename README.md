@@ -20,6 +20,9 @@ Tharsan Pethurupillai
     - [Visualstudio-Code](#visualstudio-code)
     - [Git-Client](#git-client)
     - [SSH-Key für Client erstellt](#ssh-key-für-client-erstellt)
+    - [Eigene Lernumgebung (PLE) ist eingerichtet](#Eigene Lernumgebung-(PLE)-ist-eingerichtet)
+    - [GitHUB oder Gitlab-Account ist erstellt](#GitHUB-oder-Gitlab-Account-ist-erstellt)
+    - [Git-Client wurde verwendet](#Git-Client wurde verwendet)
 - [Leistungsbeurteilung 2](/LB2/README.md)
  
  ## Einführung
@@ -83,3 +86,19 @@ Tharsan Pethurupillai
  > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
 ![image](https://user-images.githubusercontent.com/125886136/221587370-1de9481e-30bd-454f-9f0b-0c43d2a16db1.png)
+
+## Eigene Lernumgebung (PLE) ist eingerichtet
+
+### GitHUB oder Gitlab-Account ist erstellt
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
+![image](https://user-images.githubusercontent.com/125886136/221588927-e48ec643-ca30-4781-95fa-c1e819dd9c35.png)
+
+
+### Git-Client wurde verwendet
+ > [⇧ **Nach oben**](#inhaltsverzeichnis)
+
+![image](https://user-images.githubusercontent.com/125886136/221588992-729d10e0-b178-4b7e-a928-a2be927322ea.png)
+
+<br>
+
