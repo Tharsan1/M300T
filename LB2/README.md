@@ -40,7 +40,7 @@ Tharsan Pethurupillai
       - [Tag 2](#tag-2)
       - [Tag 3](#tag-3)
       - [Tag 4](#tag-4)
-- [Bewertungsraster Leistungsbeurteilung2](/LB2/M300-LB2-Bewertungsraster-Pethurupillai.xlsx)
+- [Bewertungsraster Leistungsbeurteilung 2](/LB2/M300-LB2-Bewertungsraster-Pethurupillai.xlsx)
 
 ## Vagrant
  > [⇧ **Nach oben**](#inhaltsverzeichnis)
