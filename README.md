@@ -14,6 +14,7 @@ Tharsan Pethurupillai
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Einführung](#einführung)
     - [Git einrichten](#git-einrichten)
+    - [File bearbeiten](#file-bearbeiten)
   - [Markdown](#markdown)
   - [Umgebung auf eigenem Notebook eingerichtet und funktionsfähig](#umgebung-auf-eigenem-notebook-eingerichtet-und-funktionsfähig)
     - [VirtualBox](#virtualbox)
@@ -39,7 +40,23 @@ Tharsan Pethurupillai
  git config --global user.email "E-Mail"
  ```
  
+ ### File bearbeiten
  
+ Als erstes muss man das Verzeichnis Klonen:
+```
+git clone https://github.com/Tharsan1/M300T
+```
+Es wird in das Verzeichnis kopiert, indem man sich momentan in der Shell befindet.
+
+Nun kann man das heruntergeladene Repository bearbeiten.
+
+Danach kann man das Repository wieder hochladen:
+```
+git add *
+git commit -m "Kommentar"
+git push
+```
+
  ## Markdown
  > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
