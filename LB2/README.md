@@ -161,7 +161,7 @@ config.vm.provision "shell", inline: <<-SHELL
 	sudo ufw allow 2222
 	#SSH-Service starten
 	sudo systemctl start ssh
-	#Im sshd_config FIle zwei "Statments" mit Ja austauschen, damit keine Fehlermeldung kommnt
+	#Im sshd_config File zwei "Statments" mit Ja austauschen, damit keine Fehlermeldung kommnt
 	sudo sed -i "s/.*PasswordAuthentication.*/PasswordAuthentication yes/g" /etc/ssh/sshd_config
 	sudo sed -i "s/.*ChallengeResponseAuthentication.*/ChallengeResponseAuthentication yes/g" /etc/ssh/sshd_config
 	#Owner von edm Verzeichis /var/mail an den User vagrant geben
