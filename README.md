@@ -1,4 +1,4 @@
-<a name="Modul 300 Technische Berufsschule Zürich"></a>
+<a name="Modul-300-Technische-Berufsschule-Zürich"></a>
 # Modul 300 Technische Berufsschule Zürich
 Plattformübergreifende Dienste in ein Netzwerk integrieren
 
@@ -9,7 +9,7 @@ Tharsan Pethurupillai
 <a name="inhaltsverzeichnis"></a>
 ## Inhaltsverzeichnis
 
-- [Modul 300 Technische Berufsschule Zürich](#Modul 300 Technische Berufsschule Zürich)
+- [Modul 300 Technische Berufsschule Zürich](#Modul-300-Technische-Berufsschule-Zürich)
   - [Autor](#autor)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Einführung](#einführung)
