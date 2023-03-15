@@ -25,8 +25,12 @@ Tharsan Pethurupillai
     - [Git-Client wurde verwendet](/README.md#git-client-wurde-verwendet)
   - [Vagrant](#vagrant)
     - [Befehle](#befehle)
-    - [Netzwerkplan](#netzwerkplan)
-    - [Eingerichtete Umgebung - Dokumentierung Code](#eingerichtete-umgebung---dokumentierung-code)
+    - [VM-Webserver erstellen ](#VM-Webserver-erstellen)
+    - [VM-Server mit UFW Firewall Config](#VM-Server-mit-UFW-Firewall-Config)
+    - [VM-Server mit Secure Shell Server](#VM-Server-mit-Secure-Shell-Server)
+    - [VM-Server mit Secure Shell Server, Reverse Proxy, Benutzerberechtigungen und Firewallregeln](#VM-Server-mit-Secure-Shell-Server-Reverse-Proxy-Benutzerberechtigungen-und-Firewallregeln)
+    - [Netzwerkplan von Webserver über Container](#Netzwerkplan-von-Webserver-über-Container)
+    - [Eingerichtete Umgebung Webserver über Container - Dokumentierung Code](#eingerichtete-umgebung-Webserver-über-Container---dokumentierung-code)
     - [Bestehende VM aus Vagrant-Cloud einrichten](#bestehende-vm-aus-vagrant-cloud-einrichten)
     - [Funktionsweise getestet inkl. Dokumentation der Testfälle](#funktionsweise-getestet-inkl-dokumentation-der-testfälle)
       - [Testfall für die Funktionalität](#testfall-für-die-funktionalität)
@@ -66,7 +70,131 @@ Weitere Befehle unter: https://www.vagrantup.com/docs/cli/
 
 <br>
 
-### Netzwerkplan
+### VM-Webserver erstellen 
+
+Zuerst ordner anlegen in der die VM sein soll und eine Datei "Vagrantfile" erstellen (ohne Dateiendung).
+In das Vagrant folgenden inhalt schreiben: <br>
+```
+Vagrant.configure(2) do |config|
+    config.vm.box = "ubuntu/xenial64"
+    config.vm.network "forwarded_port", guest:80, host:100, auto_correct: true
+    config.vm.synced_folder ".", "/var/www/html"  
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "512"  
+  end
+  config.vm.provision "shell", inline: <<-SHELL
+    # Packages vom lokalen Server holen
+    # sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main restricted" /etc/apt/sources.list 
+    sudo apt-get update
+    sudo apt-get -y install apache2 
+  SHELL
+  end
+```
+Nun muss man nur noch in einer Shell in das Verzeichnis gehen und "`vagrant up`" eintippen.
+
+### VM-Server mit UFW Firewall Config
+
+Bei dieser VM wird gleich die Firewall mit installiert und zusätzlich noch rules erstellt.
+```
+Vagrant.configure(2) do |config|
+    config.vm.box = "ubuntu/xenial64"
+    config.vm.network "forwarded_port", guest:80, host:100, auto_correct: true
+    config.vm.synced_folder ".", "/var/www/html"  
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "512"  
+  end
+  config.vm.provision "shell", inline: <<-SHELL
+    # Packages vom lokalen Server holen
+    # sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main restricted" /etc/apt/sources.list 
+    sudo apt-get install ufw
+    sudo ufw enable
+    sudo ufw allow 80/tcp
+    sudo ufw allow from 192.168.1.122 to any port 22
+    sudo ufw allow from 192.168.1.124 to any port 3306
+  SHELL
+  end
+```
+
+### VM-Server mit Secure Shell Server
+
+Bei dieser VM wird ein Secure Shell Server mit zusätzlichen Rules erstellt.
+```
+Vagrant.configure(2) do |config|
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+  config.vm.synced_folder ".", "/var/www/html"  
+config.vm.provider "virtualbox" do |vb|
+  vb.memory = "512"  
+end
+config.vm.provision "shell", inline: <<-SHELL
+	sudo ufw --force enable
+	sudo ufw allow 22
+	sudo ufw allow 2222
+	sudo systemctl start ssh
+	sudo sed -i "s/.*PasswordAuthentication.*/PasswordAuthentication yes/g" /etc/ssh/sshd_config
+	sudo sed -i "s/.*ChallengeResponseAuthentication.*/ChallengeResponseAuthentication yes/g" /etc/ssh/sshd_config
+	sudo reboot
+SHELL
+end
+```
+
+### VM-Server mit Secure Shell Server, Reverse Proxy, Benutzerberechtigungen und Firewallregeln
+
+Bei dieser VM wird ein Secure Shell Server installiert, Reverse Proxy, Benutzerberechtigungen und Firewallregeln eingerichtet.
+```
+Vagrant.configure(2) do |config|
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+  config.vm.synced_folder ".", "/var/www/html"  
+config.vm.provider "virtualbox" do |vb|
+  vb.memory = "512"  
+end
+config.vm.provision "shell", inline: <<-SHELL
+	#VM Update
+	sudo apt-get update
+	#Apache Webserver installieren
+	sudo apt-get -y install apache2
+	#Firewall "enablen"
+	sudo ufw --force enable
+	#Port 22 und 2222 erlaunben/freischalten
+	sudo ufw allow 22
+	sudo ufw allow 2222
+	#SSH-Service starten
+	sudo systemctl start ssh
+	#Im sshd_config FIle zwei "Statments" mit Ja austauschen, damit keine Fehlermeldung kommnt
+	sudo sed -i "s/.*PasswordAuthentication.*/PasswordAuthentication yes/g" /etc/ssh/sshd_config
+	sudo sed -i "s/.*ChallengeResponseAuthentication.*/ChallengeResponseAuthentication yes/g" /etc/ssh/sshd_config
+	#Owner von edm Verzeichis /var/mail an den User vagrant geben
+	sudo chown -c vagrant /var/mail
+	#Nur noch den Besitzer (in diesem Fall vagrant) auf das Verzeichnis erlauben
+	sudo chmod -R 700 /var/mail
+	#Nginx --> Reverse-proxy installieren
+	sudo apt-get -y install nginx
+	#Virtual Host deaktivieren
+	sudo unlink /etc/nginx/sites-enabled/default
+	#File für Reverse-proxy erstellen
+	sudo touch /etc/nginx/sites-available/reverse-proxy.conf
+	#Inhalt in File einfügen
+	cat <<%EOF% | sudo tee -a /etc/nginx/sites-available/reverse-proxy.conf
+	server {
+		listen 8080;
+		location / {
+			proxy_pass http://127.0.0.1;
+		}
+	}
+%EOF%
+	sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
+	#Apache Service stoppen
+	sudo systemctl stop apache2
+	#Nginx Service starten
+	sudo systemctl restart nginx
+	#VM rebooten
+	sudo reboot
+SHELL
+end
+```
+
+### Netzwerkplan von Webserver über Container
 <br>
 Zu sehen ist mein Netzwerkplan.
 Die Server- und Userspezifische Einstellungen werden im Vagrantfile getätigt. Darunter fallen z.B. Firewallrules.
@@ -76,7 +204,7 @@ Danach wird im Vagrantfile noch die Befehle eingetragen, welches der VM dann ben
 ![image](https://user-images.githubusercontent.com/125886136/224710421-5e93c5f5-c108-4dc1-a145-d723d1370756.png)
 
 
-### Eingerichtete Umgebung - Dokumentierung Code
+### Eingerichtete Umgebung Webserver über Container - Dokumentierung Code
  > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
 Hier sieht man den verwendeten Code und die Erklärung zu den jeweiligen Commands.
