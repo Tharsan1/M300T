@@ -162,22 +162,6 @@ Vagrant Config Ende
     `SHELL`
     `end`
 
-## Eigene Lernumgebung (PLE) ist eingerichtet
-
-### GitHUB oder Gitlab-Account ist erstellt
- > [⇧ **Nach oben**](#inhaltsverzeichnis)
-
-![image](https://user-images.githubusercontent.com/125886136/221588927-e48ec643-ca30-4781-95fa-c1e819dd9c35.png)
-
-
-### Git-Client wurde verwendet
- > [⇧ **Nach oben**](#inhaltsverzeichnis)
-
-![image](https://user-images.githubusercontent.com/125886136/221588992-729d10e0-b178-4b7e-a928-a2be927322ea.png)
-
-<br>
-
-
 ### Bestehende VM aus Vagrant-Cloud einrichten
  > [⇧ **Nach oben**](#inhaltsverzeichnis)
 
