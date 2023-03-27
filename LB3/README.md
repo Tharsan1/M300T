@@ -55,7 +55,7 @@ Hier wird kurz erklärt wie man eine einfache Webseite anhand eines Containers a
 #
 #	Einfache Apache Umgebung
 #
-FROM ubuntu:14.04
+FROM ubuntu:22.04
 RUN apt-get update
 RUN apt-get -q -y install apache2 
 # Konfiguration Apache
@@ -159,6 +159,7 @@ Als wir dann die Realisierung gewagt haben, tauchten fehler nach fehler auf. Mei
 Danach hatten wir auch noch viel Zeit in die Logical Volume Einbindung investiert. Zuerst wollten wir zur Überwachung Cadvisor verwenden, aber durch viel grübeln haben wir festgestellt, dass es nicht in Windows so fabelhaft funktioniert wie im Linux Umgebung. WSL2 sollte daher eigentlich dies ergänzen aber das tat es nicht wie gewünscht. Das Hauptproblem lag auf die Berechtigungsebenen im Windows. C: hatte sehr spezifische Berechtigungen. Dementsprechend verursachte Cadvisor viel Probleme und mussten ein alternativ Applikation suchen.
 
 Dementsprechend haben wir uns umentschieden auf Prometheus, da wir gute Erfahrung damit gesammelt haben auch im Windowsumgebung.
+Als wir den YAML File erstellt haben und uns gewagt haben es auszuführen, waren wir positiv überrascht. Das es auf dem ersten Hieb funktioniert hatte.
 
 #### Tag 7
 
