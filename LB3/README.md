@@ -71,7 +71,7 @@ CMD /bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGR
 #### Container starten
 Zuerst Image erstellen:
 ```
-docker build C:\Users\Thars\M300T\LB3\dockerfile
+docker build .
 ```
 
 Danach Image umbennen, damit es einfacher zu erkennen ist:
@@ -94,11 +94,37 @@ So könnte man auch die Webseite abändern:
 docker cp C:\Users\Thars\M300T\LB3\index.html apache2:/var/www/html/
 ```
 ### Service Überwachung
-Dieser Service ist sehr einfach einzurichten:
+Dieser Service ist über prometheus einzurichten
+Zuerst einmal muss ein yaml-file erstellt werden mit dem folgenden Inhalt.
+
 ```
-run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -p 8080:8080 google/cadvisor:latest
+lobal:
+  scrape_interval:     15s # By default, scrape targets every 15 seconds.
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+
+  - job_name: 'prometheus'
+
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['localhost:9090']
+
+
+  - job_name: 'node'
+
+    static_configs:
+      - targets: ['0.0.0.0:8080']
+
 ```
-Somit kann man nun im Browser mit "localhost:8080" auf den Service zugreifen.
+
+```
+docker run -p 9090:9090 -v prometheus.yaml:/etc/prometheus/prometheus.yaml prom/prometheus
+```
+Somit kann man nun im Browser mit "localhost:9090" auf den Service zugreifen.
 
 ### Container Sicherheit
 Hiermit kann der normale User keine sudo Befehle ausführen.
@@ -127,7 +153,12 @@ Heute habe ich mich mit dem Docker Theorie befasst und anschliessend ausgetestet
 
 
 #### Tag 6
+Heute war ein sehr Troubleshooting Tag. Zuerst haben wir unsere Fortschritte, welches wir als Hausaufgaben gehabt haben, verglichen. Dabei konnten wir Informationen über die Überwachung und den Docker File gesammelt. 
 
+Als wir dann die Realisierung gewagt haben, tauchten fehler nach fehler auf. Meistens handelte es sich um kleine Fehler, wie z.B. den File Path. anstatt "docker build dockerfile" mussten wir nur "docker build ." eingeben.
+Danach hatten wir auch noch viel Zeit in die Logical Volume Einbindung investiert. Zuerst wollten wir zur Überwachung Cadvisor verwenden, aber durch viel grübeln haben wir festgestellt, dass es nicht in Windows so fabelhaft funktioniert wie im Linux Umgebung. WSL2 sollte daher eigentlich dies ergänzen aber das tat es nicht wie gewünscht. Das Hauptproblem lag auf die Berechtigungsebenen im Windows. C: hatte sehr spezifische Berechtigungen. Dementsprechend verursachte Cadvisor viel Probleme und mussten ein alternativ Applikation suchen.
+
+Dementsprechend haben wir uns umentschieden auf Prometheus, da wir gute Erfahrung damit gesammelt haben auch im Windowsumgebung.
 
 #### Tag 7
 
