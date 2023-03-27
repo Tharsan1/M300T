@@ -76,22 +76,22 @@ docker build C:\Users\Thars\M300T\LB3\dockerfile
 
 Danach Image umbennen, damit es einfacher zu erkennen ist:
 ``` 
-docker tag <ID> Apache2
+docker tag <ID> apache2
 ```
 
 Nun kann man die VM starten (hier wird der Port 8080 weitergeleitet):
 ```
-docker run --rm -d -p 8080:80 -v /web:/var/www/html --name Apache2 <ID>
+docker run --rm -d -p 8080:80 -v web:/var/www/html --name apache2 <ID>
 ```
 
-So könnte man im nachhinein auf die Shell zugreifen:
+So könnte man im nachhinein auf die Shell zugreifen (Beachten, dass winpty benutzt wird):
 ```
-docker exec -it Apache2 /bin/bash
+winpty docker exec -it apache2 bash
 ```
 
 So könnte man auch die Webseite abändern:
 ```
-docker cp C:\Users\Thars\M300T\LB3\index.html Apache2:/var/www/html/
+docker cp C:\Users\Thars\M300T\LB3\index.html apache2:/var/www/html/
 ```
 ### Service Überwachung
 Dieser Service ist sehr einfach einzurichten:
@@ -112,7 +112,7 @@ WORKDIR /homedir
 #### Read-Only
 Wenn man den Docker mit der Option read-only startet, können keine Änderungen am Dateisystem vorgenommen werden (auch mit sudo nicht):
 ```
-docker run --read-only -d -t --name Apache2 Image
+docker run --read-only -d -t --name apache2 Image
 ```
 
 ### Vergleich Vorwissen - Wissenszuwachs
