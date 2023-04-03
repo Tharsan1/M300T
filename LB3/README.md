@@ -21,6 +21,8 @@ Tharsan Pethurupillai
     - [Service Überwachung](#service-überwachung)
     - [Container Sicherheit](#container-sicherheit)
       - [Read-Only](#read-only)
+    - [Kubernetes](#kubernetes)
+    - [Service](#service)
     - [Vergleich Vorwissen - Wissenszuwachs](#vergleich-vorwissen---wissenszuwachs)
     - [Reflexion](#reflexion)
       - [Tag 5](#tag-5)
@@ -46,6 +48,8 @@ Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Cont
 | ```docker stop```   | Haltet die gewünschte Maschine an. |
 
 ### Netzwerkplan
+
+![](../images/Kubernetes_36x36.png "Cloud Computing")
 
 ### Webserver erstellen
 Hier wird kurz erklärt wie man eine einfache Webseite anhand eines Containers anbietet.
@@ -73,6 +77,7 @@ Zuerst Image erstellen:
 ```
 docker build .
 ```
+![](Screenshot/dockerbuild.png "Dockerbuild")
 
 Danach Image umbennen, damit es einfacher zu erkennen ist:
 ``` 
@@ -140,10 +145,84 @@ Wenn man den Docker mit der Option read-only startet, können keine Änderungen 
 ```
 docker run --read-only -d -t --name apache2 Image
 ```
+### Kubernetes
+
+Zuerst muss eine yaml Datei erstellt werden:
+```
+touch deployment.yaml
+```
+Die Datei soll folgendes beinhalten:
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubdeployment
+  labels:
+    app: kub
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: kub
+  template:
+    metadata:
+      labels:
+        app: kub
+    spec:
+      containers:
+      - name: kub-webserver
+        image: webserver
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+```
+Jetzt muss das yaml file noch applied werden, damit die Container erstellt werden. Dafür muss man folgendes eingeben:
+```
+kubectl apply -f deployment.yaml
+```
+
+Mit folgendem Command kann man nun die Pods anzeigen:
+```
+kubectl get pods
+```
+
+### Service
+
+Zuerst ein loadbalance.yaml file erstellen mit folgendem Inhalt:
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubservice
+  annotations:
+    service.beta.kubernetes.io/linode-loadbalancer-throttle: "4"
+  labels:
+    app: kubservice
+spec:
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: kub
+  sessionAffinity: None
+```
+Nun muss man den Service ausführen:
+```
+kubectl apply -f loadbalance.yaml
+```
+Und so kann man ihn anzeigen:
+```
+kubectl get services
+```
+
+Nun kann man auf die Website zugreifen:
+
 
 ### Vergleich Vorwissen - Wissenszuwachs
 
-+ 
 
 
 ### Reflexion
