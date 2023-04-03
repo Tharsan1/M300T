@@ -103,7 +103,10 @@ docker cp C:\Users\Thars\M300T\LB3\index.html apache2:/var/www/html/
 ```
 ![](Screenshot/dockercpweb.png "Dockercpweb")
 
-Hier könnt Ihr das Resultat mit dem neuen Directory sehen.
+Noch ein Bild vom neuen Index File
+![](Screenshot/newhtmlcode.png "newhtmlcode")
+
+Hier könnt Ihr das Resultat mit dem neuen Index-File sehen.
 ![](Screenshot/apache2withnewhtml.png "apache2withnewhtml")
 
 ### Service Überwachung
