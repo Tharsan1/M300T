@@ -27,7 +27,8 @@ Tharsan Pethurupillai
     - [Reflexion](#reflexion)
       - [Tag 5](#tag-5)
       - [Tag 6](#tag-6)
-      - [Tag 7](#tag-7)
+      - [Tag 7 / Letzter Tag](#tag-7--letzter-tag)
+      - [Gesamtreflexion](#gesamtreflexion)
 
 ## Docker
 Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung. Docker vereinfacht die Bereitstellung von Anwendungen, weil sich Container, die alle nötigen Pakete enthalten, leicht als Dateien transportieren und installieren lassen.
@@ -49,7 +50,7 @@ Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Cont
 
 ### Netzwerkplan
 
-![](../images/Kubernetes_36x36.png "Cloud Computing")
+![](Screenshot/Netzwerkplan.png "Netzwerkplan")
 
 ### Webserver erstellen
 Hier wird kurz erklärt wie man eine einfache Webseite anhand eines Containers anbietet.
@@ -240,6 +241,7 @@ Nun kann man auf die Website zugreifen:
 ![](Screenshot/apachework.png "apachework")
 
 ### Vergleich Vorwissen - Wissenszuwachs
++ Docker in einem anderen Modul verwendet jedoch nur STEP by STEP Anleitungen gehabt und eher wenig selbstständig
 
 
 
@@ -258,5 +260,23 @@ Danach hatten wir auch noch viel Zeit in die Logical Volume Einbindung investier
 Dementsprechend haben wir uns umentschieden auf Prometheus, da wir gute Erfahrung damit gesammelt haben auch im Windowsumgebung.
 Als wir den YAML File erstellt haben und uns gewagt haben es auszuführen, waren wir positiv überrascht. Das es auf dem ersten Hieb funktioniert hatte.
 
-#### Tag 7
+#### Tag 7 / Letzter Tag
+Heute war unser Ziel hauptsächlich Kubernetes zu bewältigen. Jedoch standen uns nur 3 Lektionen zur Verfügung, da wir noch die Leistungsbeurteilung 1 schreiben müssen.
+Kubernetes an sich konnten wir heute gut schaffen. Es gab den ein oder anderen Fehler, welches nicht gerade einfach war zu finden. Darunter gehörte z.B. die spezifische Einstellungen für den Node oder Loadbalancer. 
+Leider hatten wir keine Unterlagen bzw. die Verlinkung auf dem Github wurde entfernt oder nicht mehr weiter gepflegt. Darum mussten wir unsere Informationen hauptsächlick aus dem Internet beziehen. 
+
+Da die Kubernetes Dokumentationen im Internet recht verbreitet ist, gab es duzende Beispiele, welche wir verwendet könnten um unser Projekt auf die Beine zu stellen. Jedoch wäre das zu einfach und deshalb haben wir aus verschiedenen Webseiten unser eigenes Kubernetes aufgebaut.
+Wir wollten Kubernetes versuchen, da wir noch nie damit Erfahrung gesammelt haben und haben es dann auch durchgezogen.
+
+#### Gesamtreflexion
+Im Grossen und Ganzem hat mir das Modul gut gefallen, ich konnte mich selbstständig bewegen und die Interessen individuell gestalten. Teamwork gab es natürlich auch, so konnte ich mich jederzeit mit meinem Teampartner austauschen und uns dementsprechend gegenseitig ergänzen.
+Was ich jedoch sehr schade gefunden habe, war die Art "ins kalte Wasser" fallen lassen. Wir haben zusammen Themen besprochen und auch behandelt, aber ich hätte mir mehr Pleniumunterricht gewünscht. Die Kernpunkte wurden in Plenium besprochen und behandelt jedoch könnten wir viel mehr profitieren, wenn wir die Informationen von einem Qualifizierten Lehrkraft erhalten würden, als von einer unbekannten Internetquelle, welches mit Widersprüchen bombadiert ist.
+
+Durch die Zusammenarbeit mit Rico konnte ich sowie im LB2 und LB3 viel herausholen. Wir konnten uns individuell auf spezifische Gebiete fokuiseren und uns dann austauschen. Es gab auch Momente, welches wir verwendet haben um ein Problem zusammen zu lösen.
+
+Was sehr positiv war, ist die Art der Hilfestellung von der Lehrkraft bei Problemen. Falls wir ein Problem hatten, wurde das Ergebnis nicht direkt preisgegeben, sondern nur mit Hinweisen erleutert, damit ich selber auf das Problem kommen könnte. Dadurch habe ich viel Glücksmomente und Erleichterungen sammeln und gab mir motivation weiter an meinem Projekt zu arbeiten.
+
+Bedauerlicherweise hatten wir ansich sehr wenig Zeit für das Modul, wir haben selten die Zwischenpause gemacht und oft durchgearbeitet. Mit mehr Zeit hätten wir garantiert das komplette Potenzial des Projekts ausschöpfen können.
+
+
 
