@@ -83,21 +83,29 @@ Danach Image umbennen, damit es einfacher zu erkennen ist:
 ``` 
 docker tag <ID> apache2
 ```
+![](Screenshot/dockertag.png "Dockertag")
 
 Nun kann man die VM starten (hier wird der Port 8080 weitergeleitet):
 ```
 docker run --rm -d -p 8080:80 -v web:/var/www/html --name apache2 <ID>
 ```
+![](Screenshot/dockerrun.png "Dockerrun")
 
 So könnte man im nachhinein auf die Shell zugreifen (Beachten, dass winpty benutzt wird):
 ```
 winpty docker exec -it apache2 bash
 ```
+![](Screenshot/dockerexec.png "Dockertag")
 
 So könnte man auch die Webseite abändern:
 ```
 docker cp C:\Users\Thars\M300T\LB3\index.html apache2:/var/www/html/
 ```
+![](Screenshot/dockercpweb.png "Dockercpweb")
+
+Hier könnt Ihr das Resultat mit dem neuen Directory sehen.
+![](Screenshot/apache2withnewhtml.png "apache2withnewhtml")
+
 ### Service Überwachung
 Dieser Service ist über prometheus einzurichten
 Zuerst einmal muss ein yaml-file erstellt werden mit dem folgenden Inhalt.
@@ -130,6 +138,8 @@ scrape_configs:
 docker run -p 9090:9090 -v prometheus.yaml:/etc/prometheus/prometheus.yaml prom/prometheus
 ```
 Somit kann man nun im Browser mit "localhost:9090" auf den Service zugreifen.
+
+![](Screenshot/Ueberwachungprometheus.png "Ueberwachungprometheus")
 
 ### Container Sicherheit
 Hiermit kann der normale User keine sudo Befehle ausführen.
@@ -180,11 +190,13 @@ Jetzt muss das yaml file noch applied werden, damit die Container erstellt werde
 ```
 kubectl apply -f deployment.yaml
 ```
+![](Screenshot/kubectlapply.png "kubectlapply")
 
 Mit folgendem Command kann man nun die Pods anzeigen:
 ```
 kubectl get pods
 ```
+![](Screenshot/kubectlgetpods.png "kubectlgetpods")
 
 ### Service
 
@@ -213,13 +225,15 @@ Nun muss man den Service ausführen:
 ```
 kubectl apply -f loadbalance.yaml
 ```
+![](Screenshot/loadbalanceapply.png "loadbalanceapply")
 Und so kann man ihn anzeigen:
 ```
 kubectl get services
 ```
+![](Screenshot/kubectlgetservices.png "kubectlgetservices")
 
 Nun kann man auf die Website zugreifen:
-
+![](Screenshot/apachework.png "apachework")
 
 ### Vergleich Vorwissen - Wissenszuwachs
 
