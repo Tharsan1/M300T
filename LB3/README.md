@@ -104,6 +104,7 @@ docker cp C:\Users\Thars\M300T\LB3\index.html apache2:/var/www/html/
 ![](Screenshot/dockercpweb.png "Dockercpweb")
 
 Noch ein Bild vom neuen Index File
+</br>
 ![](Screenshot/newhtmlcode.png "newhtmlcode")
 
 Hier könnt Ihr das Resultat mit dem neuen Index-File sehen.
